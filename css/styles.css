@@ -242,14 +242,14 @@ aside a:hover {
   margin: 5% 0;
 }
 
-input[type="text"] {
+input[type="email"] {
   color: #5a5a5a;
   text-align: center;
   text-transform: uppercase;
   padding: 15px 25px;
   border-radius: 25px;
   width: 70%;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 input[type="submit"] {
@@ -274,7 +274,12 @@ input:focus {
     outline: none;
 }
 
-
+.success-message {
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
 
 
 /***** Instagram Section ******************************************************/

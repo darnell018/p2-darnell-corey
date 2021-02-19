@@ -1,0 +1,836 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/****COLORS*******************
+
+Dark Grey:            #333333
+Medium Grey:          #5a5a5a
+Light Grey:           #f2f2f2
+Blue:                 #498FDC
+Medium Light Blue:    #79b7f4
+Light Blue:           #DCECF5
+
+*****************************/
+
+html, body, input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.gradient-bar {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(89.99deg, #498FDC 0%, #DCECF5 100%);
+  z-index: 1000;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: #333333;
+  z-index: 999;
+}
+
+nav .logo {
+  padding: 9px 40% 0;
+  width: 75px;
+  z-index: 1000000
+}
+
+.nav-contain {
+  display: none;
+}
+
+.social-link {
+  width: 35px;
+  position: absolute;
+  top: 21px;
+  right: 5%;
+  z-index: 1000000;
+}
+
+.social-link:hover {
+  opacity: 75%;
+  transition: 1s;
+}
+
+
+
+/***** Mobile Menu: https://codepen.io/g13nn/pen/eHGEF ************************/
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 49px;
+  padding: 13px 30px 8px;
+  color: #f2f2f2;
+  border: 0;
+  font-size: 2.5em;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.cross {
+  background: none;
+  position: absolute;
+  height: 70px;
+  top: 0px;
+  left: 0;
+  padding: 11px 32px 10px;
+  color: #f2f2f2;
+  border: 0;
+  font-size: 5em;
+  line-height: 88px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+.menu {
+  z-index: 1000000;
+  font-size: 2em;
+  width: 100%;
+  height: 95vh;
+  background: #333333;
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  margin: 45% 10%;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;
+  padding:15px 0 15px 0;
+  border-bottom: #498FDC 3px solid;
+}
+
+.menu li:nth-child(4){
+  border-bottom:#dddddd 0px solid;
+}
+
+.menu ul li a {
+  text-decoration:none;
+  margin: 0px;
+  color:#f2f2f2;
+}
+
+.menu a {
+  text-decoration: none;
+  color:#666;
+}
+
+.menu a:hover {
+  text-decoration:none;
+  color:#498FDC;
+}
+
+/***** Mobile Menu: https://codepen.io/g13nn/pen/eHGEF ************************/
+
+.container-page {
+  max-width: 425px;
+  margin: 10% auto;
+  padding: 0px 10%;
+}
+
+.hero {
+  background: url(../images/southtpa-hero.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  margin-top: 70px;
+}
+
+.hero-content {
+  padding: 175px 0;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  background: #498FDC;
+  width: 80%;
+  margin: 0 10%;
+  padding: 5% 0;
+}
+
+article {
+  border-bottom: 10px solid #79b7f4;
+  margin-bottom: 15%;
+}
+
+article h3, aside h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 5% 0;
+}
+
+article p {
+  color: #5a5a5a;
+  margin-bottom: 6%;
+}
+
+article img {
+  width: 100%;
+}
+
+figcaption {
+  display: none;
+}
+
+aside {
+  background-color: #e4e4e4;
+  text-align: center;
+  width: 60%;
+  max-width: 290px;
+  padding: 10%;
+  margin: 10% auto;
+}
+
+aside a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  background-color: #79b7f4;
+  margin: 25px 0;
+  padding: 10px;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+
+aside a:hover {
+  background-color: #498FDC;
+  transition: .3s ease;
+}
+
+.subscribe {
+  background-color: #79b7f4;
+  color: #ffffff;
+  text-align: center;
+  padding: 10% 7%;
+  margin: 20% 0;
+}
+
+.subscribe h2 {
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 1.75em;
+}
+
+.subscribe p {
+  margin: 5% 0;
+}
+
+input[type="text"] {
+  color: #5a5a5a;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 25px;
+  width: 70%;
+  margin: 10% 0;
+}
+
+input[type="submit"] {
+    background: #333333;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    width: 45%;
+    padding: 5%;
+    margin: 0 27.5% -20%;
+    transition: .3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #5a5a5a;
+  transition: .3s ease;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+
+/***** Instagram Section ******************************************************/
+.instagram {
+  padding: 0 5% 3%;
+}
+
+.instagram h3 {
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 15% 0 15px;
+}
+
+.instagram-feed {
+  overflow: scroll;
+}
+.instagram img {
+  border-radius: 5px;
+}
+
+.instagram img:hover {
+  opacity: .5;
+}
+
+.instagram_gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 200%;
+}
+/***** Instagram Section END **************************************************/
+
+
+footer {
+  background: #333;
+  padding-bottom: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta-bar {
+  background: #dfe4e6;
+  padding: 25px 5%;
+  text-align: center;
+  font-size: .8em;
+  color: #498fdc;
+  text-transform: uppercase;
+  width: 90%;
+  transition: .5s ease;
+}
+
+.cta-bar:hover {
+  background: #DCECF5;
+  transition: .5s ease;
+}
+
+.cta-bar h3,
+.cta-bar p {
+  display: inline;
+}
+
+.footer-container {
+  max-width: 325px;
+  width: 100%;
+  margin: 25px auto 0;
+}
+
+footer img {
+    width: 30%;
+    margin: 10% 35% 5%;
+}
+
+.footer-container p {
+  color: #ffffff;
+  font-size: .6em;
+  text-align: center;
+  background: #498fdc;
+  margin: 0 13%;
+  padding: 10px 2%;
+  width: 70%;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  border-right: 2px solid #498fdc;
+}
+
+footer ul li:nth-child(3) {
+  border-right: none;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 15px;
+  transition: 1s;
+  font-size: .8em;
+}
+
+.footer-nav {
+  width: 100%;
+  margin: 45px auto;
+  text-align: center;
+}
+
+footer ul li a:hover {
+  color: #498FDC;
+  transition: 1s;
+}
+
+/******** Start - Sub Page Styles: Under Construction ********/
+.const-contain {
+  max-width: 600px;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto;
+}
+
+.coming-soon {
+    margin-top: 70px;
+    padding: 25% 5%;
+}
+
+.coming-soon h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #333333;
+}
+
+.coming-soon p {
+  text-align: center;
+  padding: 10% 15%;
+  color: #79b7f4;
+}
+/******** End - Sub Page Styles: Under Construction ********/
+
+/******** Start - Sub Page Styles: Food ********/
+.sub-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  background: url(../images/food-hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.sub-hero h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  line-height: 1em;
+  margin: 10% 0 5%;
+  font-size: 2em;
+}
+
+.content p {
+  text-align: center;
+  color: #5a5a5a;
+  margin: 0 5%;
+}
+
+.ft-food-contain {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.ft-food-contain img {
+  width: 25%;
+  align-self: center;
+  margin: -5% 3% 5%;
+  max-width: 300px;
+  max-height: 214px;
+}
+
+.ft-res-container {
+    margin: 15% 0;
+    box-sizing: border-box;
+}
+
+.ft-res-container a {
+  width: 60%;
+  background: #f2f2f2;
+  display: inline-block;
+  margin: 3% 20%;
+  padding: 5%;
+  text-decoration: none;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.ft-res-container a:hover {
+  background: #e4e4e4;
+  transition: .2s ease;
+}
+
+.ft-res-container img {
+  width: 100%;
+}
+
+.ft-res-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+/***** END - Sub Page Styles: Food *****/
+
+
+/***** Media 400px Start ******************************************************/
+@media (min-width: 400px) {
+  article h3, aside h3 {
+    font-size: 1.5em;
+  }
+
+  /* Sub-Page Style: Food */
+  .ft-food-contain img {
+    margin: -5% 1% 5%;
+  }
+
+}
+/***** Media 400px End ********************************************************/
+
+/***** Media 480px Start ******************************************************/
+@media (min-width: 480px) {
+  .hero-content {
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .menu ul {
+    margin: 35% 20%;
+  }
+
+  nav .logo {
+    padding: 9px 44% 0;
+  }
+
+  article h3, aside h3 {
+    font-size: 2em;
+  }
+
+  .instagram h3 {
+    font-size: 2em;
+  }
+
+  input[type="submit"] {
+    font-size: 1.5em;
+    padding: 2%;
+    max-width: 250px;
+    margin: 0 auto -18%;
+  }
+
+  /* Sub-Page Style: Food */
+  .sub-hero h1 {
+    font-size: 2.75em;
+  }
+
+  .content h2 {
+    margin: 10% 0 3%;
+  }
+
+  .content p {
+    margin: 0 15%;
+  }
+
+  .ft-res-container {
+    margin: 10% auto;
+    max-width: 575px;
+    width: 100%;
+  }
+
+  .ft-res-container a {
+    width: 47.5%;
+    margin: 1.5% 1%;
+    padding: 3%;
+  }
+
+}
+/***** Media 480px End ********************************************************/
+
+/***** Media 695px Start ******************************************************/
+@media (min-width: 695px) {
+  .hamburger, .cross, .menu {
+    display: none;
+  }
+
+  .nav-contain {
+    display: inline;
+    margin: 8px 25%;
+  }
+
+  nav .logo {
+    padding: 9px 5% 0;
+    z-index: 10000000
+  }
+
+  nav ul {
+    display: inline;
+    list-style: none;
+    position: absolute;
+    top: 22px;
+    margin: 0 5%;
+    z-index: 10000
+  }
+
+  .nav-contain {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    z-index: 10000
+  }
+  nav li {
+    display: flex;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    margin: 0 15px;
+  }
+
+  nav li:hover {
+    color: #498FDC;
+    transition: .3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .hero-content {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .subscribe {
+    padding: 10% 15%;
+  }
+
+  input[type="text"] {
+    margin: 3% 0 5%;
+  }
+
+  input[type="submit"] {
+    font-size: 1.5em;
+    padding: 2%;
+    max-width: 250px;
+    margin: 0 auto -18%;
+  }
+
+  .instagram h3 {
+    font-size: 2.5em;
+  }
+
+  .footer-container {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* Sub-Page Style: Food */
+  .sub-hero {
+    height: 40vh;
+  }
+
+  .content h2 {
+    margin: 50px 0 15px;
+  }
+
+  .ft-res-container {
+    margin: 5% auto 10%;
+  }
+
+  .ft-res-container img {
+    width: 70%;
+    margin: 0 15%;
+}
+
+}
+/***** Media 695px End ********************************************************/
+
+/***** Media 825px Start ******************************************************/
+@media (min-width: 825px) {
+  .container-page {
+    max-width: 800px;
+    display: flex;
+    width: 80%;
+    margin: 10% auto;
+    padding: 0;
+}
+
+  article {
+    /* width: 30%; */
+    display: inline-block;
+    margin: 1%;
+  }
+
+  aside {
+    padding: 1% 10% 5%;
+    clear: both;
+    max-width: 800px;
+  }
+
+  article h3, aside h3 {
+    font-size: 1.25em;
+  }
+
+  .subscribe{
+    margin: 15% 0;
+  }
+
+  .instagram h3 {
+    margin: 20% 0 15px;
+  }
+
+  .cta-bar {
+    font-size: 1.25em;
+  }
+
+
+  /* Sub-Page Style: Food */
+  .ft-res-container {
+    max-width: 725px;
+  }
+}
+/***** Media 825px End ********************************************************/
+
+/***** Media 900px Start ******************************************************/
+@media (min-width: 900px) {
+  .hero-content h1 {
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+    max-width: 725px;
+  }
+
+  .container-page {
+    margin-bottom: 2%;
+  }
+
+  aside {
+    margin: 2% auto;
+    padding: 1% 10% 3%;
+  }
+
+  aside a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+  }
+
+  .subscribe {
+    padding: 5% 15% 10%;
+    clear: both;
+  }
+
+  .subscribe h2 {
+    font-size: 2.25em;
+  }
+
+  .subscribe p {
+    margin: 1% 0;
+  }
+
+  .instagram {
+    padding: 0 5% 5%;
+  }
+
+
+  /* Sub-Page Style: Food */
+  .ft-res-container {
+    max-width: 800px;
+  }
+}
+/***** Media 900px End ********************************************************/
+
+/***** Media 1200px Start *****************************************************/
+@media (min-width: 1200px) {
+  nav .logo {
+    margin-left: 10%;
+  }
+
+  .social-link {
+    right: 15%;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content {
+    padding: 250px 0;
+  }
+
+  .hero-content h1 {
+    margin: auto;
+    padding: 25px 10px;
+    font-size: 3em;
+    max-width: 850px;
+  }
+
+  .container-page {
+    max-width: 1050px;
+    margin: 5% auto;
+  }
+
+  input[type="submit"] {
+    padding: 2%;
+    max-width: 250px;
+    margin: 0 auto -17%;
+  }
+
+  nav li {
+    margin: 0 35px;
+  }
+
+  .instagram h3 {
+    margin: 5% 0 15px;
+  }
+
+
+  /* Sub-Page Style: Food */
+  .sub-hero {
+    padding-bottom: 75px;
+  }
+
+  .sub-hero h1 {
+    font-size: 3.75em;
+  }
+
+  .ft-res-container {
+    max-width: 1100px;
+    margin: 2% auto 10%;
+  }
+
+  .ft-res-container a {
+    padding: 4% 3%;
+  }
+
+  .ft-res-container img {
+    width: 40%;
+    margin: 0 30%;
+  }
+
+  .ft-res-container h3 {
+    font-size: 2em;
+  }
+}
+/***** Media 1200px End *******************************************************/

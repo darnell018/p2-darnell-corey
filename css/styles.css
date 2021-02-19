@@ -270,6 +270,13 @@ input[type="submit"]:hover {
   transition: .3s ease;
 }
 
+/* Corrects issue on mobile browsers affectting input styles */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input:focus {
     outline: none;
 }

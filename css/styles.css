@@ -735,8 +735,17 @@ footer ul li a:hover {
   }
 
   aside {
-    margin: 2% auto;
+    margin: 5% auto 2%;;
     padding: 1% 10% 3%;
+  }
+
+  aside h3 {
+    font-size: 2.5em;
+    margin: 20px 0;
+  }
+
+  aside p {
+    margin-bottom: 25px;
   }
 
   aside a {

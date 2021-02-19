@@ -840,6 +840,10 @@ footer ul li a:hover {
     font-size: 3.75em;
   }
 
+  .content p {
+    margin: 0 25%;
+  }
+
   .ft-res-container {
     max-width: 1100px;
     margin: 2% auto 10%;

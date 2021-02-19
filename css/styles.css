@@ -208,7 +208,7 @@ aside a {
   text-transform: uppercase;
   color: #ffffff;
   display: block;
-  background-color: #79b7f4;
+  background-color: #498FDC;
   margin: 25px 0;
   padding: 10px;
   border-radius: 25px;
@@ -216,12 +216,12 @@ aside a {
 }
 
 aside a:hover {
-  background-color: #498FDC;
+  background-color: #79b7f4;
   transition: .3s ease;
 }
 
 .subscribe {
-  background-color: #79b7f4;
+  background-color: #498FDC;
   color: #ffffff;
   text-align: center;
   padding: 10% 7%;
@@ -232,6 +232,10 @@ aside a:hover {
   text-transform: uppercase;
   line-height: 1em;
   font-size: 1.75em;
+}
+
+.subscribe label {
+  display: none;
 }
 
 .subscribe p {

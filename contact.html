@@ -53,11 +53,37 @@
     </header>
 
     <main class="const-contain">
-      <section class="coming-soon">
+      <!-- <section class="coming-soon">
         <h2>Something Cool Coming Real Soon...</h2>
         <p>Just like the City of Tampa & our interstates, this place is always under contruction! Check back later, maybe it will be complete or maybe we'll be adding more construction...</p>
         <p>(Warning: Watch out for falling pixels.)</p>
-      </section>
+      </section> -->
+
+      <form id="lets-create-form" name="lets-create-form" class="trooper-apply" method="POST" action="form.php" onsubmit="return validateForm(this)">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" name="req_name" id="name" class="flname" placeholder="Name...">
+        </div>
+
+        <div class="telephone">
+          <label for="phone">Phone</label>
+          <input type="tel" name="req_phone" id="phone" class="phone" placeholder="Phone...">
+        </div>
+
+        <div class="email-address">
+          <label for="email">Email</label>
+          <input type="email" name="req_email" id="email" class="email" placeholder="Email...">
+        </div>
+
+        <div class="comments">
+          <label for="comment">Ask Away</label>
+          <textarea name="comment" id="comment" class="comment" rows="8" cols="80" placeholder="Ask Away..."></textarea>
+        </div>
+
+        <div class="submit-bttn">
+          <input type="submit" class="submit-button" name="submit" value="submit">
+        </div>
+      </form>
     </main>
 
 

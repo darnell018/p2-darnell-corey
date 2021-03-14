@@ -409,7 +409,13 @@ footer ul li a:hover {
   max-width: 600px;
   width: 90%;
   height: 70vh;
-  margin: 0 auto;
+  margin: 70px auto;
+}
+
+.const-contain h1 {
+  color: #333333;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .coming-soon {
@@ -429,9 +435,17 @@ footer ul li a:hover {
   padding: 10% 15%;
   color: #79b7f4;
 }
+
+.coming-soon a {
+    color: #79b7f4;
+}
+
+.coming-soon a:hover {
+    color: #333333;
+}
 /******** End - Sub Page Styles: Under Construction ********/
 
-/******** Start - Sub Page Styles: Food ********/
+/******** Start - Sub Page Styles: Food & Drink ********/
 .sub-hero {
   display: flex;
   align-items: center;
@@ -493,6 +507,7 @@ footer ul li a:hover {
   text-decoration: none;
   color: #333333;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .ft-res-container a:hover {
@@ -508,6 +523,13 @@ footer ul li a:hover {
     text-align: center;
     text-transform: uppercase;
     font-size: 1em;
+}
+
+.drink-hero {
+  background: url(../images/drink-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /***** END - Sub Page Styles: Food *****/
 
@@ -782,6 +804,10 @@ footer ul li a:hover {
   /* Sub-Page Style: Food */
   .ft-res-container {
     max-width: 800px;
+  }
+
+  .ft-res-container a {
+    margin: 1.15% 1%;
   }
 }
 /***** Media 900px End ********************************************************/

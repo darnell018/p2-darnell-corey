@@ -530,12 +530,26 @@ footer ul li a:hover {
     font-size: 1em;
 }
 
-#no-logo {
+#no-logo-1,
+#no-logo-2,
+#no-logo-3,
+#no-logo-4,
+#no-logo-5,
+#no-logo-6,
+#no-logo-7,
+#no-logo-8  {
   color: #ffffff;
   background: #333333;
 }
 
-#no-logo:hover {
+#no-logo-1:hover,
+#no-logo-2:hover,
+#no-logo-3:hover,
+#no-logo-4:hover,
+#no-logo-5:hover,
+#no-logo-6:hover,
+#no-logo-7:hover,
+#no-logo-8:hover {
   color: #ffffff;
   background: #498fdc;
 }

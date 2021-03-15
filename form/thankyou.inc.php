@@ -291,7 +291,8 @@ footer ul li a:hover {
 @media (min-width: 825px) {
   .container-page {
     max-width: 800px;
-    display: flex;
+    height: 40vh;
+    display: inline-block;
     width: 80%;
     margin: 10% auto;
     padding: 0;
@@ -312,9 +313,12 @@ footer ul li a:hover {
   }
 
   .container-page {
-    max-width: 1050px;
-    margin: 5% auto;
-  }
+    height: 40vh;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin: 15% 25% 10%;
+ }
 }
 
 

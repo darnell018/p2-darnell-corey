@@ -52,14 +52,12 @@
       </div>
     </header>
 
-    <main class="const-contain">
-      <!-- <section class="coming-soon">
-        <h2>Something Cool Coming Real Soon...</h2>
-        <p>Just like the City of Tampa & our interstates, this place is always under contruction! Check back later, maybe it will be complete or maybe we'll be adding more construction...</p>
-        <p>(Warning: Watch out for falling pixels.)</p>
-      </section> -->
+    <section class="sub-hero contact-hero">
+      <h1>Drop us a line</h1>
+    </section>
 
-      <form id="lets-create-form" name="lets-create-form" class="trooper-apply" method="POST" action="form.php" onsubmit="return validateForm(this)">
+    <main class="contact-container">
+      <form id="contact-form" name="contact-form" class="contact-form" method="POST" action="form.php" onsubmit="return validateForm(this)">
         <div class="name">
           <label for="name">Name</label>
           <input type="text" name="req_name" id="name" class="flname" placeholder="Name...">
@@ -70,14 +68,14 @@
           <input type="tel" name="req_phone" id="phone" class="phone" placeholder="Phone...">
         </div>
 
-        <div class="email-address">
-          <label for="email">Email</label>
-          <input type="email" name="req_email" id="email" class="email" placeholder="Email...">
+        <div class="contact-email-address">
+          <label for="contact-email">Email</label>
+          <input type="email" name="req_email" id="contact-email" class="contact-email" placeholder="Email...">
         </div>
 
         <div class="comments">
-          <label for="comment">Ask Away</label>
-          <textarea name="comment" id="comment" class="comment" rows="8" cols="80" placeholder="Ask Away..."></textarea>
+          <label for="comment">Comments</label>
+          <textarea name="comment" id="comment" class="comment" rows="8" cols="80" placeholder="Start Typing..."></textarea>
         </div>
 
         <div class="submit-bttn">
@@ -86,7 +84,12 @@
       </form>
     </main>
 
-
+    <!-- jQuery Instagram Feed -->
+    <section class="instagram">
+      <h3>Let's Get Social</h3>
+      <div class="instagram-feed" id="instagram-feed1"></div>
+    </section>
+    <!-- jQuery Instagram Feed -->
 
     <!-- Begin Footer Section -->
     <footer>
@@ -114,7 +117,30 @@
     <!-- Scripts -->
     <!-- Mobile Menu -->
     <script src="js/menu-mobile.js"></script>
-
+    <!-- jQuery.instagramfeed Script START -->
+    <script src="js/jquery.instagramfeed/jquery.instagramFeed.min.js"></script>
+    <script>
+        (function($){
+            $(window).on('load', function(){
+                $.instagramFeed({
+                    'username': 'southtpa',
+                    'container': "#instagram-feed1",
+                    'display_profile': false,
+                    'display_biography': false,
+                    'display_gallery': true,
+                    'display_captions': false,
+                    'callback': null,
+                    'styling': true,
+                    'items': 5,
+                    'items_per_row': 5,
+                    'margin': 1,
+                    'lazy_load': true,
+                    'on_error': console.error
+                  });
+              });
+          })(jQuery);
+    </script>
+    <!-- jQuery.instagramfeed Script END -->
     <!-- Scripts -->
   </body>
 </html>

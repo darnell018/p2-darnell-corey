@@ -169,6 +169,10 @@ nav .logo {
   padding: 5% 0;
 }
 
+.hero-slider {
+  display: none;
+}
+
 article {
   border-bottom: 10px solid #79b7f4;
   margin-bottom: 15%;
@@ -526,8 +530,25 @@ footer ul li a:hover {
     font-size: 1em;
 }
 
+#no-logo {
+  color: #ffffff;
+  background: #333333;
+}
+
+#no-logo:hover {
+  color: #ffffff;
+  background: #498fdc;
+}
+
 .drink-hero {
   background: url(../images/drink-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.explore-hero {
+  background: url(../images/explore-hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -562,7 +583,6 @@ textarea#comment {
     font-weight: bold;
     text-transform: uppercase;
     color: #498FDC;
-    background: #e5e5e5;
     border-radius: 5px;
 }
 
@@ -643,7 +663,7 @@ textarea#comment {
 
   .contact-container {
     max-width: 375px;
-    margin: 125px auto;
+    margin: 100px auto 175px;
   }
 }
 /***** Media 480px End ********************************************************/
@@ -732,7 +752,12 @@ textarea#comment {
 
   section.hero {
     display: none;
-}
+  }
+
+  .hero-slider {
+    display: block;
+  }
+
 
   /* Image Slider: https://codepen.io/dfitzy/pen/xZqGVo */
   .slider {
@@ -861,15 +886,6 @@ textarea#comment {
   .previous_btn:hover, .next_btn:hover {
     opacity: 1;
   }
-
-@media only screen and (max-width: 767px) {
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
-}
   /* Image Slider */
 
   /* Sub-Page Style: Food */
@@ -878,7 +894,7 @@ textarea#comment {
   }
 
   .content h2 {
-    margin: 50px 0 15px;
+    margin: 80px 0 15px;
   }
 
   .ft-res-container {
